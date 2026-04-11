@@ -28,8 +28,10 @@ st.markdown(
             font-weight: 800;
             color: #0f172a;
             margin-bottom: 0.2rem;
+            margin-top:20px;
             letter-spacing: 0.3px;
         }
+
         .sub-title {
             font-size: 1.02rem;
             color: #475569;
@@ -413,7 +415,7 @@ if "prediction_history" in st.session_state and st.session_state.prediction_hist
 # OVERVIEW PAGE
 # ==================================================
 if page == "Overview":
-    st.markdown('<div class="main-title">🥬 Fresh Sense</div>', unsafe_allow_html=True)
+    st.markdown('<div class="main-title" id="title">🥬 Fresh Sense</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="sub-title">Dynamic freshness-based discounting system for retail decision support</div>',
         unsafe_allow_html=True,
